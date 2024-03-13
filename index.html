@@ -8,7 +8,30 @@
     <link href="/src/output.css" rel="stylesheet">
   </head>
   <body>
-    <h1 class="mt-5">Hola que tal</h1>
+    <header class="relative h-screen">
+      <!-- Picture tag with object-fit -->
+      <picture class="absolute inset-0 w-full h-full z-0">
+          <!-- Image source for different resolutions -->
+          <source srcset="/public/images/maspalomas-dunes-bg.jpg" media="(min-width: 1024px)">
+          <source srcset="/public/images/maspalomas-dunes-bg.jpg" media="(min-width: 768px)">
+          <img src="/public/images/maspalomas-dunes-bg.jpg" alt="Background Image" class="object-cover w-full h-full">
+      </picture>
+      <div class="absolute inset-0 bg-black opacity-30"></div>
+      <div class="container mx-auto flex flex-col items-center h-screen ">
+        <img src="/public/images/LosElefantesLogo.svg" alt="Logo" class="mt-[18vh] h-48 mb-8 z-10">
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded z-10">
+          Click Me
+        </button>
+      </div>
+      <div class="absolute top-0 left-0 mt-12 pl-12">
+        <ul>
+            <li class="leading-5 h-11 w-11 p-[11px] mb-5 rounded-full border border-white text-white">DE</li>
+            <li class="leading-5 h-11 w-11 p-[11px] mb-5 rounded-full border border-white text-white">AT</li>
+        </ul>
+      </div>
+  </header>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
+
+
