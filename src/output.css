@@ -444,6 +444,36 @@ video {
   display: none;
 }
 
+@font-face {
+  font-family: 'katibeh';
+
+  src: url('/fonts/katibeh-regular.woff2') format('woff2'),
+             url('/fonts/katibeh-regular.woff') format('woff');
+
+  font-weight: normal;
+
+  font-style: normal;
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'montserrat-regular';
+
+  src: url('/fonts/montserrat-regular.woff2') format('woff2'),
+             url('/fonts/montserrat-regular.woff') format('woff');
+
+  font-weight: normal;
+
+  font-style: normal;
+
+  font-display: swap;
+}
+
+body {
+  font-family: montserrat-regular, sans-serif;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -677,6 +707,10 @@ video {
   inset: 0px;
 }
 
+.bottom-0 {
+  bottom: 0px;
+}
+
 .left-0 {
   left: 0px;
 }
@@ -750,32 +784,36 @@ video {
   margin-right: auto;
 }
 
-.mt-2 {
-  margin-top: 0.5rem;
+.mb-14 {
+  margin-bottom: 3.5rem;
 }
 
-.mt-5 {
-  margin-top: 1.25rem;
-}
-
-.mb-4 {
-  margin-bottom: 1rem;
+.mb-5 {
+  margin-bottom: 1.25rem;
 }
 
 .mb-8 {
   margin-bottom: 2rem;
 }
 
-.mt-\[18vh\] {
-  margin-top: 18vh;
+.mb-9 {
+  margin-bottom: 2.25rem;
 }
 
 .mt-12 {
   margin-top: 3rem;
 }
 
-.mb-5 {
-  margin-bottom: 1.25rem;
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.mt-20 {
+  margin-top: 5rem;
+}
+
+.mt-\[18vh\] {
+  margin-top: 18vh;
 }
 
 .box-border {
@@ -889,6 +927,14 @@ video {
   display: none;
 }
 
+.h-11 {
+  height: 2.75rem;
+}
+
+.h-48 {
+  height: 12rem;
+}
+
 .h-full {
   height: 100%;
 }
@@ -897,20 +943,8 @@ video {
   height: 100vh;
 }
 
-.h-32 {
-  height: 8rem;
-}
-
-.h-48 {
-  height: 12rem;
-}
-
-.h-44 {
-  height: 11rem;
-}
-
-.h-11 {
-  height: 2.75rem;
+.w-11 {
+  width: 2.75rem;
 }
 
 .w-\[this-is\\\\\] {
@@ -927,22 +961,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-32 {
-  width: 8rem;
-}
-
-.w-44 {
-  width: 11rem;
-}
-
-.w-1 {
-  width: 0.25rem;
-}
-
-.w-11 {
-  width: 2.75rem;
 }
 
 .flex-shrink {
@@ -1279,6 +1297,10 @@ video {
   grid-auto-flow: column dense;
 }
 
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .flex-row {
   flex-direction: row;
 }
@@ -1461,6 +1483,10 @@ video {
 
 .justify-items-stretch {
   justify-items: stretch;
+}
+
+.gap-4 {
+  gap: 1rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
@@ -1907,9 +1933,9 @@ video {
   border-style: none;
 }
 
-.border-white {
+.border-elefantes-yellow {
   --tw-border-opacity: 1;
-  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+  border-color: rgb(243 235 203 / var(--tw-border-opacity));
 }
 
 .bg-\[rgb\(255\2c 0\2c 0\)\] {
@@ -1925,6 +1951,11 @@ video {
 .bg-blue-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+}
+
+.bg-elefantes-yellow {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 235 203 / var(--tw-bg-opacity));
 }
 
 .decoration-slice {
@@ -2037,11 +2068,6 @@ video {
      object-fit: scale-down;
 }
 
-.object-center {
-  -o-object-position: center;
-     object-position: center;
-}
-
 .p-\[11px\] {
   padding: 11px;
 }
@@ -2054,14 +2080,6 @@ video {
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-}
-
-.pl-52 {
-  padding-left: 13rem;
-}
-
-.pt-52 {
-  padding-top: 13rem;
 }
 
 .pl-12 {
@@ -2124,9 +2142,8 @@ video {
   vertical-align: super;
 }
 
-.text-7xl {
-  font-size: 4.5rem;
-  line-height: 1;
+.font-katibeh {
+  font-family: katibeh, sans-serif;
 }
 
 .text-4xl {
@@ -2134,8 +2151,13 @@ video {
   line-height: 2.5rem;
 }
 
-.text-lg {
-  font-size: 1.125rem;
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
+.text-xl {
+  font-size: 1.25rem;
   line-height: 1.75rem;
 }
 
@@ -2224,9 +2246,14 @@ video {
   color: rgb(59 130 246 / var(--tw-text-opacity));
 }
 
-.text-white {
+.text-elefantes-orange {
   --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+  color: rgb(229 84 44 / var(--tw-text-opacity));
+}
+
+.text-elefantes-yellow {
+  --tw-text-opacity: 1;
+  color: rgb(243 235 203 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -2273,10 +2300,6 @@ video {
 .subpixel-antialiased {
   -webkit-font-smoothing: auto;
   -moz-osx-font-smoothing: auto;
-}
-
-.opacity-50 {
-  opacity: 0.5;
 }
 
 .opacity-30 {
@@ -2650,3 +2673,10 @@ video {
     }
   }
 }
+
+
+
+
+
+
+
