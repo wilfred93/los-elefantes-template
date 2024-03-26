@@ -24,6 +24,10 @@
     body {
         @apply font-montserrat-regular;
     }
+
+    .ytp-watch-later-button {
+        display: none;
+    }
 }
 
 

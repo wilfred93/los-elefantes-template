@@ -719,6 +719,22 @@ body {
   top: 0px;
 }
 
+.right-0 {
+  right: 0px;
+}
+
+.right-\[-200px\] {
+  right: -200px;
+}
+
+.left-\[140px\] {
+  left: 140px;
+}
+
+.top-\[40px\] {
+  top: 40px;
+}
+
 .isolate {
   isolation: isolate;
 }
@@ -812,8 +828,52 @@ body {
   margin-top: 5rem;
 }
 
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
+}
+
 .mt-\[18vh\] {
   margin-top: 18vh;
+}
+
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
+.mb-7 {
+  margin-bottom: 1.75rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-2\.5 {
+  margin-bottom: 0.625rem;
+}
+
+.mt-28 {
+  margin-top: 7rem;
+}
+
+.mt-16 {
+  margin-top: 4rem;
+}
+
+.mt-32 {
+  margin-top: 8rem;
+}
+
+.mb-40 {
+  margin-bottom: 10rem;
+}
+
+.mt-14 {
+  margin-top: 3.5rem;
 }
 
 .box-border {
@@ -963,6 +1023,26 @@ body {
   width: 100%;
 }
 
+.max-w-3xl {
+  max-width: 48rem;
+}
+
+.max-w-4xl {
+  max-width: 56rem;
+}
+
+.max-w-\[880px\] {
+  max-width: 880px;
+}
+
+.max-w-\[960px\] {
+  max-width: 960px;
+}
+
+.max-w-\[767px\] {
+  max-width: 767px;
+}
+
 .flex-shrink {
   flex-shrink: 1;
 }
@@ -977,6 +1057,26 @@ body {
 
 .grow {
   flex-grow: 1;
+}
+
+.basis-1\/4 {
+  flex-basis: 25%;
+}
+
+.basis-3\/4 {
+  flex-basis: 75%;
+}
+
+.basis-5\/12 {
+  flex-basis: 41.666667%;
+}
+
+.basis-7\/12 {
+  flex-basis: 58.333333%;
+}
+
+.basis-1\/3 {
+  flex-basis: 33.333333%;
 }
 
 .table-auto {
@@ -1809,6 +1909,22 @@ body {
   border-radius: 9999px;
 }
 
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.rounded-3xl {
+  border-radius: 1.5rem;
+}
+
+.rounded-2xl {
+  border-radius: 1rem;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
 .rounded-b {
   border-bottom-right-radius: 0.25rem;
   border-bottom-left-radius: 0.25rem;
@@ -1933,9 +2049,24 @@ body {
   border-style: none;
 }
 
+.border-elefantes-orange {
+  --tw-border-opacity: 1;
+  border-color: rgb(229 84 44 / var(--tw-border-opacity));
+}
+
 .border-elefantes-yellow {
   --tw-border-opacity: 1;
   border-color: rgb(243 235 203 / var(--tw-border-opacity));
+}
+
+.border-red-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(239 68 68 / var(--tw-border-opacity));
+}
+
+.border-black {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
 .bg-\[rgb\(255\2c 0\2c 0\)\] {
@@ -1953,9 +2084,23 @@ body {
   background-color: rgb(59 130 246 / var(--tw-bg-opacity));
 }
 
+.bg-elefantes-green {
+  --tw-bg-opacity: 1;
+  background-color: rgb(3 87 107 / var(--tw-bg-opacity));
+}
+
+.bg-elefantes-orange {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 84 44 / var(--tw-bg-opacity));
+}
+
 .bg-elefantes-yellow {
   --tw-bg-opacity: 1;
   background-color: rgb(243 235 203 / var(--tw-bg-opacity));
+}
+
+.bg-workation {
+  background-image: url('public/images/workation.png');
 }
 
 .decoration-slice {
@@ -1976,6 +2121,10 @@ body {
 .box-decoration-clone {
   -webkit-box-decoration-break: clone;
           box-decoration-break: clone;
+}
+
+.bg-cover {
+  background-size: cover;
 }
 
 .bg-fixed {
@@ -2068,6 +2217,10 @@ body {
      object-fit: scale-down;
 }
 
+.p-3 {
+  padding: 0.75rem;
+}
+
 .p-\[11px\] {
   padding: 11px;
 }
@@ -2082,8 +2235,34 @@ body {
   padding-bottom: 0.5rem;
 }
 
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 .pl-12 {
   padding-left: 3rem;
+}
+
+.pb-24 {
+  padding-bottom: 6rem;
+}
+
+.pb-44 {
+  padding-bottom: 11rem;
+}
+
+.pb-64 {
+  padding-bottom: 16rem;
+}
+
+.pb-28 {
+  padding-bottom: 7rem;
 }
 
 .text-left {
@@ -2159,6 +2338,11 @@ body {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .font-bold {
@@ -2237,6 +2421,10 @@ body {
   line-height: 1.25rem;
 }
 
+.leading-8 {
+  line-height: 2rem;
+}
+
 .text-\[\#336699\]\/\[\.35\] {
   color: rgb(51 102 153 / .35);
 }
@@ -2254,6 +2442,11 @@ body {
 .text-elefantes-yellow {
   --tw-text-opacity: 1;
   color: rgb(243 235 203 / var(--tw-text-opacity));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -2304,6 +2497,10 @@ body {
 
 .opacity-30 {
   opacity: 0.3;
+}
+
+.opacity-40 {
+  opacity: 0.4;
 }
 
 .bg-blend-normal {

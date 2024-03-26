@@ -10,6 +10,9 @@ module.exports = {
         'elefantes-yellow': '#F3EBCB',
         'elefantes-orange': '#E5542C',
         'elefantes-green': '#03576B',
+      },
+      backgroundImage: {
+        'workation': "url('public/images/workation.png')",
       }
     }
   },
