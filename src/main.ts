@@ -13,8 +13,8 @@ const swiper = new Swiper('.swiper', {
         waitForTransition:true ,
         reverseDirection: true,
     },
-    speed:3000,
+    speed:9000,
     loop: true,
-    spaceBetween: 7,
+    spaceBetween: 2,
 
   });

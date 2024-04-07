@@ -21,56 +21,94 @@
           Click Me
         </button>
       </div>
-      <div class="absolute top-0 left-0 mt-12 pl-12">
-        <ul>
+      <div class="absolute top-0 left-0 mt-12 pl-8 md:pl-12">
+        <div>
+          <img src="/images/hamburger-menu.svg" alt="menu">
+        </div>
+        <ul class="mt-8 hidden md:block">
             <li class="leading-5 h-11 w-11 p-[11px] mb-5 rounded-full border border-elefantes-yellow text-elefantes-yellow">DE</li>
             <li class="leading-5 h-11 w-11 p-[11px] mb-5 rounded-full border border-elefantes-yellow text-elefantes-yellow">AT</li>
         </ul>
       </div>
-      <div class="absolute bottom-0 left-0 pl-12 text-elefantes-yellow">
-        <p class=" montserrat-light text text-xl">
-          Feel the sun & the <br>
-          the salty water
+      <div class="absolute bottom-0 left-0 w-full md:pl-12 text-elefantes-yellow">
+        <p class="montserrat-light text-xl  text-center md:text-left ">
+          Sun, Sand & Serenity <br>
+          Awaits You
         </p>
-        <img class="mb-9" src="images/arrow-right.svg" alt="arrow-right">
+        <img class="hidden md:block  mb-9" src="images/arrow-right.svg" alt="arrow-right">
+        <img class="my-6 mx-auto md:hidden md:mb-9" src="images/arrow-down.svg" alt="arrow-down">
       </div>
     </header>
     <!-- Intro -->
-    <section class="container mx-auto">
-      <h1 class="text-center font-katibeh text-elefantes-orange text-6xl mt-20 mb-14">Your tropical oasis in the heart of Playa del Inglés</h1>
-    <div class="grid grid-cols-2 gap-4">
-      <div class="flex justify-center">
-        <img src="/images/GC-island.png" alt="Gran Canaria Island">
+    <section class="container mx-auto px-5">
+      <h1 class="primary--title">Your tropical oasis in the heart of Playa del Inglés</h1>
+      <div class="flex flex-wrap">
+        <div class="flex justify-center w-full md:w-1/2 ">
+          <img class="w-[85%] md:w-[70%] md:w-full" src="/images/GC-island.png" alt="Gran Canaria Island">
+        </div>
+        <div class="border w-full mt-8 md:mt-0 md:w-1/2 relative">      
+          <picture>
+              <img class="w-full rounded-xl border border-elefantes-orange" src="/images/map-playa-de-ingles.png" alt="Los Elefantes Beach House">
+          </picture>
+          <p class="my-6">Playa del Inglés Beach is <span class="text-elefantes-orange">200 meters</span> away from Los Elefantes Beach House</p>
+          <div>
+            <div class="overflow-x-auto md:overflow-x-auto whitespace-nowrap md:whitespace-normal -ml-1">
+              <div class="absolute right-0 -bottom-[22px] md:hidden">
+                <img src="/images/arrow-right-small.svg" alt="scroll-right">
+              </div>
+              <button class="rounded border border-elefantes-orange py-1.5 px-2.5 rounded-full text-xs m-1 md:m-1 inline-block"> Playa del Ingles Beach</button>
+              <button class="rounded border border-elefantes-orange py-1.5 px-2.5 rounded-full text-xs m-1 inline-block"> Yumbo Center</button>
+              <button class="rounded border border-elefantes-orange py-1.5 px-2.5 rounded-full text-xs m-1 inline-block"> Las Burras Beach</button>
+              <button class="rounded border border-elefantes-orange py-1.5 px-2.5 rounded-full text-xs m-1 inline-block"> Faro Maspalomas</button>
+            </div>
+          </div>
+        </div>
       </div>
-      <div>      
-        <picture>
-            <img  class="rounded-xl border border-elefantes-orange" src="/images/map-playa-de-ingles.png" alt="Los Elefantes Beach House">
-        </picture>
-      </div>
-    </div>
     </section>
+
+
   <!-- Swiper Test-->
-  <section class="border border-black my-5">
-    <div class="swiper border border-elefantes-orange p-3" style ="width:600px; height:300px;">
-      <!-- Additional required wrapper -->
-      <div class="swiper-wrapper" class="ease-linear" style="transition-timing-function: linear;">
-        <!-- Slides -->
-        <div class="swiper-slide border border-black">Slide 1</div>
-        <div class="swiper-slide border border-black">Slide 2</div>
-        <div class="swiper-slide border border-black">Slide 3</div>
-        <div class="swiper-slide border border-black">Slide 4</div>
-        <div class="swiper-slide border border-black">Slide 5</div>
-        <div class="swiper-slide border border-black">Slide 6</div>
+  <section class="border border-black p-2.5 mt-16 my-5 max-w-[1024px]" class="rounded-lg">
+    <div class="unit-images-wrapper">
+      <div class="swiper p-3" >
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper ease-linear" style="transition-timing-function: linear;">
+          <!-- Slides -->
+          <div class="swiper-slide rounded-lg">
+              <picture class="rounded-lg">
+                <source srcset="/images/apartment/slider.webp" type="image/webp">
+                <img src="/images/apartment/slider.webp" class="rounded-lg" alt="Apartment Image 1">
+              </picture>
+          </div>
+          <div class="swiper-slide rounded-lg">
+              <picture>
+                <source srcset="/images/apartment/slider01.webp" type="image/webp">
+              <img src="/images/apartment/slider01.webp" class="rounded-lg" alt="Apartment Image 2">
+            </picture>
+          </div>
+          <div class="swiper-slide rounded-lg">
+              <picture>
+                <source srcset="/images/apartment/slider01.webp" type="image/webp">
+              <img src="/images/apartment/slider01.webp" class="rounded-lg" alt="Apartment Image 2">
+            </picture>
+          </div>
+          <div class="swiper-slide rounded-lg">
+              <picture>
+                <source srcset="/images/apartment/slider01.webp" type="image/webp">
+              <img src="/images/apartment/slider01.webp" class="rounded-lg" alt="Apartment Image 2">
+            </picture>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
       </div>
-      <!-- If we need pagination -->
-      <div class="swiper-pagination"></div>
-    
-      <!-- If we need navigation buttons -->
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
-    
-      <!-- If we need scrollbar -->
-      <div class="swiper-scrollbar"></div>
     </div>
   </section>
 	<!-- Amenities & Testimonies -->
@@ -109,13 +147,13 @@
 		</div>
 	</section>
     <!-- Workation -->
-    <section class="bg-workation bg-cover py-20 relative bg-fixed">
+    <!-- <section class="bg-workation bg-cover py-20 relative bg-fixed">
       <div class="absolute inset-0 bg-black opacity-40 w-full h-full z-0"></div>
       <div class="container mx-auto relative z-10">
         <h2 class="text-center font-katibeh text-elefantes-orange text-6xl mb-14  z-10">Workation in sunny Gran Canaria?</h2>
         <iframe class=" mx-auto rounded-lg border border-elefantes-orange" width="560" height="315" src="https://www.youtube.com/embed/02gTbKCHHgc?si=ruvGaMCyG0Mc91Q_&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" allowfullscreen></iframe>
       </div>
-    </section>
+    </section> -->
     <!-- Personal Welcome -->
     <section class="container mx-auto">
       <h2 class="text-center font-katibeh text-elefantes-orange text-6xl mt-20 mb-14">Vacationing with Heart: <br> Where eveery guest matters</h2>
