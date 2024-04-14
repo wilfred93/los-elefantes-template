@@ -6,7 +6,7 @@ import 'swiper/css';
 
 const swiper = new Swiper('.swiper', {
     modules: [Autoplay],
-    slidesPerView: 3,
+    slidesPerView: 1.5,
     allowTouchMove: false,
     autoplay: {
         delay: 0,
@@ -16,5 +16,12 @@ const swiper = new Swiper('.swiper', {
     speed:9000,
     loop: true,
     spaceBetween: 2,
-
+    breakpoints: {
+        640: { 
+            slidesPerView: 2,
+        },
+        1024: { 
+            slidesPerView: 3,
+        }
+    }
   });
