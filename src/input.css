@@ -31,6 +31,18 @@
         -webkit-transform: translateX(-100%);
         transform: translateX(-100%);
     }
+
+    .arrow-background {
+        left: calc((100% - 960px) / 2)
+    }
+
+    @media (max-width: 1024px) {
+        .arrow-background {
+            left: calc((100% - 768px) / 2)
+        }
+    }
+
+
 }
 
 @layer components {

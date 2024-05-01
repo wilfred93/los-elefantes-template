@@ -4,9 +4,12 @@ import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
 
 
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('#photos-slideshow', {
     modules: [Autoplay],
     slidesPerView: 1.5,
+    pagination: {
+        el: ".swiper-pagination",
+      },
     allowTouchMove: false,
     autoplay: {
         delay: 0,
@@ -24,4 +27,14 @@ const swiper = new Swiper('.swiper', {
             slidesPerView: 3,
         }
     }
+  });
+
+  const testimonalSlideshow = new Swiper('#testimonial-slideshow', {
+    modules: [Autoplay],
+    slidesPerView: 1,
+    pagination: {
+        el: ".swiper-pagination2",
+      },
+    allowTouchMove: true,
+    loop: true,
   });
