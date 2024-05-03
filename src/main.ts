@@ -1,8 +1,8 @@
 import './output.css'
 import Swiper from 'swiper';
-import { Autoplay } from 'swiper/modules';
+import { Autoplay, Pagination } from 'swiper/modules';
 import 'swiper/css';
-
+import 'swiper/css/pagination';
 
 const swiper = new Swiper('#photos-slideshow', {
     modules: [Autoplay],
@@ -30,10 +30,11 @@ const swiper = new Swiper('#photos-slideshow', {
   });
 
   const testimonalSlideshow = new Swiper('#testimonial-slideshow', {
-    modules: [Autoplay],
+    modules: [Autoplay, Pagination],
     slidesPerView: 1,
     pagination: {
         el: ".swiper-pagination2",
+        clickable: true,
       },
     allowTouchMove: true,
     loop: true,

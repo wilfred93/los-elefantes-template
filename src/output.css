@@ -754,6 +754,10 @@ body {
   bottom: 3rem;
 }
 
+.bottom-5 {
+  bottom: 1.25rem;
+}
+
 .left-0 {
   left: 0px;
 }
@@ -784,6 +788,10 @@ body {
 
 .top-\[40px\] {
   top: 40px;
+}
+
+.\!bottom-5 {
+  bottom: 1.25rem !important;
 }
 
 .isolate {
@@ -3170,11 +3178,6 @@ body {
   .xl\:max-w-\[844px\] {
     max-width: 844px;
   }
-
-  .xl\:translate-x-\[-22px\] {
-    --tw-translate-x: -22px;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  }
 }
 
 @media (min-width: 1536px) {
@@ -3184,11 +3187,6 @@ body {
 
   .\32xl\:ml-\[268px\] {
     margin-left: 268px;
-  }
-
-  .\32xl\:translate-x-\[-40px\] {
-    --tw-translate-x: -40px;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 }
 
