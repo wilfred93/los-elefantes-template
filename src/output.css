@@ -742,6 +742,10 @@ body {
   inset: 0px;
 }
 
+.\!bottom-5 {
+  bottom: 1.25rem !important;
+}
+
 .-bottom-\[22px\] {
   bottom: -22px;
 }
@@ -752,10 +756,6 @@ body {
 
 .bottom-12 {
   bottom: 3rem;
-}
-
-.bottom-5 {
-  bottom: 1.25rem;
 }
 
 .left-0 {
@@ -788,10 +788,6 @@ body {
 
 .top-\[40px\] {
   top: 40px;
-}
-
-.\!bottom-5 {
-  bottom: 1.25rem !important;
 }
 
 .isolate {
@@ -1093,6 +1089,10 @@ body {
   max-height: 90%;
 }
 
+.max-h-72 {
+  max-height: 18rem;
+}
+
 .w-11 {
   width: 2.75rem;
 }
@@ -1127,6 +1127,14 @@ body {
 
 .max-w-\[960px\] {
   max-width: 960px;
+}
+
+.max-w-72 {
+  max-width: 18rem;
+}
+
+.max-w-lg {
+  max-width: 32rem;
 }
 
 .flex-shrink {

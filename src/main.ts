@@ -1,8 +1,9 @@
 import './output.css'
 import Swiper from 'swiper';
-import { Autoplay, Pagination } from 'swiper/modules';
+import { Autoplay, Pagination, EffectCoverflow } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
+import 'swiper/css/effect-coverflow';
 
 const swiper = new Swiper('#photos-slideshow', {
     modules: [Autoplay],
@@ -29,13 +30,32 @@ const swiper = new Swiper('#photos-slideshow', {
     }
   });
 
-  const testimonalSlideshow = new Swiper('#testimonial-slideshow', {
-    modules: [Autoplay, Pagination],
-    slidesPerView: 1,
-    pagination: {
-        el: ".swiper-pagination2",
-        clickable: true,
-      },
-    allowTouchMove: true,
-    loop: true,
-  });
+const testimonalSlideshow = new Swiper('#testimonial-slideshow', {
+  modules: [Autoplay, Pagination],
+  slidesPerView: 1,
+  pagination: {
+      el: ".swiper-pagination2",
+      clickable: true,
+    },
+  allowTouchMove: true,
+  loop: true,
+});
+
+const workationSection = new Swiper("#workationSection", {
+  modules:[EffectCoverflow],
+  effect: "coverflow",
+  spaceBetween: 100,
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: "auto",
+  coverflowEffect: {
+    rotate: 0,
+    stretch: 0,
+    modifier: 1,
+    scale: 0.8,
+    slideShadows: true,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+  },
+});
