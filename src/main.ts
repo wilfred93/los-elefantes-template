@@ -47,15 +47,42 @@ const workationSection = new Swiper("#workationSection", {
   spaceBetween: 100,
   grabCursor: true,
   centeredSlides: true,
+  centerInsufficientSlides: true,
   slidesPerView: "auto",
   coverflowEffect: {
     rotate: 0,
     stretch: 0,
     modifier: 1,
     scale: 0.8,
-    slideShadows: true,
+    slideShadows: false,
   },
   pagination: {
     el: ".swiper-pagination",
   },
 });
+
+
+
+const settings = {
+  classes: {
+    iframe: ['w-full','h-[330px]']
+  }
+};
+
+	const videoElement = document.querySelector('.js-video');
+
+  const videoID = videoElement.dataset.videoId;
+
+  videoElement.addEventListener('click', function () {
+      const iframe = document.createElement('iframe');
+      settings.classes.iframe.forEach(className => {
+          iframe.classList.add(className);
+      });
+      iframe.setAttribute('frameborder', '0');
+      iframe.setAttribute('allowfullscreen', '');
+      iframe.setAttribute('src', `https://www.youtube.com/embed/JGwWNGJdvx8?rel=0&autoplay=1`);
+
+      this.innerHTML = '';
+      this.appendChild(iframe);
+  });
+

@@ -1077,6 +1077,10 @@ body {
   height: 12rem;
 }
 
+.h-\[330px\] {
+  height: 330px;
+}
+
 .h-full {
   height: 100%;
 }
@@ -1085,12 +1089,12 @@ body {
   height: 100vh;
 }
 
-.max-h-\[90\%\] {
-  max-height: 90%;
+.max-h-\[330px\] {
+  max-height: 330px;
 }
 
-.max-h-72 {
-  max-height: 18rem;
+.max-h-\[90\%\] {
+  max-height: 90%;
 }
 
 .w-11 {
@@ -1125,16 +1129,12 @@ body {
   max-width: 56rem;
 }
 
+.max-w-\[600px\] {
+  max-width: 600px;
+}
+
 .max-w-\[960px\] {
   max-width: 960px;
-}
-
-.max-w-72 {
-  max-width: 18rem;
-}
-
-.max-w-lg {
-  max-width: 32rem;
 }
 
 .flex-shrink {
@@ -1191,6 +1191,18 @@ body {
 
 .border-separate {
   border-collapse: separate;
+}
+
+.border-spacing-0 {
+  --tw-border-spacing-x: 0px;
+  --tw-border-spacing-y: 0px;
+  border-spacing: var(--tw-border-spacing-x) var(--tw-border-spacing-y);
+}
+
+.border-spacing-0\.5 {
+  --tw-border-spacing-x: 0.125rem;
+  --tw-border-spacing-y: 0.125rem;
+  border-spacing: var(--tw-border-spacing-x) var(--tw-border-spacing-y);
 }
 
 .rotate-180 {
@@ -2078,6 +2090,10 @@ body {
   border-width: 1px;
 }
 
+.border-2 {
+  border-width: 2px;
+}
+
 .border-x {
   border-left-width: 1px;
   border-right-width: 1px;
@@ -2174,6 +2190,14 @@ body {
 .bg-elefantes-yellow {
   --tw-bg-opacity: 1;
   background-color: rgb(243 235 203 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#02576bbd\] {
+  background-color: #02576bbd;
+}
+
+.bg-\[url\(\'\/images\/remote_workers_map\.jpg\'\)\] {
+  background-image: url('/images/remote_workers_map.jpg');
 }
 
 .bg-workation {
