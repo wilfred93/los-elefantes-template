@@ -42,7 +42,7 @@ const testimonalSlideshow = new Swiper('#testimonial-slideshow', {
 });
 
 const workationSection = new Swiper("#workationSection", {
-  modules:[EffectCoverflow],
+  modules:[EffectCoverflow, Pagination],
   effect: "coverflow",
   spaceBetween: 100,
   grabCursor: true,
@@ -58,6 +58,7 @@ const workationSection = new Swiper("#workationSection", {
   },
   pagination: {
     el: ".swiper-pagination",
+    type: "fraction",
   },
 });
 
