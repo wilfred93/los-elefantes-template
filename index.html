@@ -5,6 +5,7 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Los Elefantes Beach House</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
   </head>
   <body class="bg-elefantes-yellow">
     <!-- Hero Section-->
@@ -48,7 +49,7 @@
         </div>
         <div class="border w-full md:mt-0 md:w-1/2 relative">      
           <picture>
-              <img class="w-full rounded-xl border border-elefantes-orange" src="/images/map-playa-de-ingles.png" alt="Los Elefantes Beach House">
+              <img class="w-full rounded-xl border-2 border-elefantes-orange" src="/images/map-playa-de-ingles.png" alt="Los Elefantes Beach House">
           </picture>
           <p class="my-6">Playa del Inglés Beach is <span class="text-elefantes-orange">200 meters</span> away from Los Elefantes Beach House</p>
           <div>
@@ -56,130 +57,129 @@
               <!-- <div class="absolute right-0 -bottom-[22px] md:hidden">
                 <img src="/images/arrow-right-small.svg" alt="scroll-right">
               </div> -->
-              <button class="border border-elefantes-orange py-1.5 px-2.5 rounded-full text-xs m-1 md:m-1 inline-block"> Playa del Ingles Beach</button>
-              <button class="border border-elefantes-orange py-1.5 px-2.5 rounded-full text-xs m-1 inline-block"> Yumbo Center</button>
-              <button class="border border-elefantes-orange py-1.5 px-2.5 rounded-full text-xs m-1 inline-block"> Las Burras Beach</button>
-              <button class="border border-elefantes-orange py-1.5 px-2.5 rounded-full text-xs m-1 inline-block"> Faro Maspalomas</button>
-              <button class="border border-elefantes-orange py-1.5 px-2.5 rounded-full text-xs m-1 inline-block"> Faro Maspalomas</button>
-              <button class="border border-elefantes-orange py-1.5 px-2.5 rounded-full text-xs m-1 inline-block"> Faro Maspalomas</button>
+              <button class="border-2 border-elefantes-orange py-1.5 px-2.5 rounded-full text-xs m-1 md:m-1 inline-block"> Playa del Ingles Beach</button>
+              <button class="border-2 border-elefantes-orange py-1.5 px-2.5 rounded-full text-xs m-1 inline-block"> Yumbo Center</button>
+              <button class="border-2 border-elefantes-orange py-1.5 px-2.5 rounded-full text-xs m-1 inline-block"> Las Burras Beach</button>
+              <button class="border-2 border-elefantes-orange py-1.5 px-2.5 rounded-full text-xs m-1 inline-block"> Faro Maspalomas</button>
+              <button class="border-2 border-elefantes-orange py-1.5 px-2.5 rounded-full text-xs m-1 inline-block"> Faro Maspalomas</button>
+              <button class="border-2 border-elefantes-orange py-1.5 px-2.5 rounded-full text-xs m-1 inline-block"> Faro Maspalomas</button>
             </div>
           </div>
         </div>
       </div>
     </section>
-
-  <!-- Swiper Test-->
-  <section class="mt-16 my-5 container px-5">
-    <div class="unit-images-wrapper border border-elefantes-orange rounded-lg p-2.5">
-      <div id="photos-slideshow" class="swiper p-3" >
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper ease-linear" style="transition-timing-function: linear;">
-          <!-- Slides -->
-          <div class="swiper-slide rounded-lg">
-              <picture class="rounded-lg">
-                <source srcset="/images/apartment/slider.webp" type="image/webp">
-                <img src="/images/apartment/slider.webp" alt="Apartment Image 1">
+    <!-- Swiper Test-->
+    <section class="mt-16 my-5 container px-5">
+      <div class="unit-images-wrapper border border-elefantes-orange rounded-lg p-2.5">
+        <div id="photos-slideshow" class="swiper p-3" >
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper ease-linear" style="transition-timing-function: linear;">
+            <!-- Slides -->
+            <div class="swiper-slide rounded-lg">
+                <picture class="rounded-lg">
+                  <source srcset="/images/apartment/slider.webp" type="image/webp">
+                  <img src="/images/apartment/slider.webp" alt="Apartment Image 1">
+                </picture>
+            </div>
+            <div class="swiper-slide rounded-lg">
+                <picture>
+                  <source srcset="/images/apartment/slider01.webp" type="image/webp">
+                <img src="/images/apartment/slider01.webp" alt="Apartment Image 2">
               </picture>
-          </div>
-          <div class="swiper-slide rounded-lg">
-              <picture>
-                <source srcset="/images/apartment/slider01.webp" type="image/webp">
-              <img src="/images/apartment/slider01.webp" alt="Apartment Image 2">
-            </picture>
-          </div>
-          <div class="swiper-slide rounded-lg">
-              <picture>
-                <source srcset="/images/apartment/slider01.webp" type="image/webp">
-              <img src="/images/apartment/slider01.webp" alt="Apartment Image 2">
-            </picture>
-          </div>
-          <div class="swiper-slide rounded-lg">
-              <picture>
-                <source srcset="/images/apartment/slider01.webp" type="image/webp">
-              <img src="/images/apartment/slider01.webp" alt="Apartment Image 2">
-            </picture>
-          </div>
-        </div>
-        
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
-      
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-      
-        <!-- If we need scrollbar -->
-        <div class="swiper-scrollbar"></div>
-      </div>
-    </div>
-  </section>
-	<!-- Amenities & Testimonies -->
-	<section class="pb-28 px-5 relative overflow-hidden">
-		<div class="container mx-auto mt-16 lg:mt-28 relative">
-			<div class="hidden md:block absolute w-full top-[40px] md:top-[40px] 2xl:top-[50px] max-w-[960px] arrow-background">
-				<img src="/images/arrow-ladder.svg" alt="">
-			</div>
-			<div class="flex flex-wrap max-w-4xl mx-auto text-center">
-				<div class="basis-full md:px-9 md:basis-1/3">
-					<h2 class="primary--title my-0 md:mt-6 lg:mt-2 md:text-4xl lg:text-5xl">Everything you need for a perfect vacation</h2>
-				</div>
-				<div class="md:px-9 lg:p-0 basis-1/2 md:basis-1/3 md:text-base lg:text-xl md:leading-8 lg:leading-9">
-					<ul class="md:mt-12 lg:mt-16  ">
-						<li>Fully Equiped kitchen</li>
-						<li>Soap & Shampoo</li>
-						<li>Coffee & Tea</li>
-						<li>Board Games</li>
-					</ul>
-				</div>
-				<div class="md:px-9 lg:p-0 basis-1/2 md:basis-1/3 md:text-base lg:text-xl md:leading-8 lg:leading-9">
-					<ul class="md:mt-24 lg:mt-32 ">
-						<li>Fully Equiped kitchen</li>
-						<li>Soap & Shampoo</li>
-						<li>Coffee & Tea</li>
-						<li>Board Games</li>
-					</ul>
-				</div>
-			</div>
-			<div class="mt-16 md:mt-[75px] lg:mt-28">
-				<div class=" bg-elefantes-green rounded-xl lg:max-w-[856px] lg:mr-[130px] xl:max-w-[844px] xl:mr-[277px] mx-auto md:mr-[70px] md:mt-[80px] text-white text-center py-12 px-8 2xl:ml-[268px] relative">
-          <div class=" hidden sm:block absolute top-12 left-12 md:top-24 lg:top-20 lg:left-20 ">
-            <img class="md:h-8 lg:h-full"  src="images/quote.svg" alt="open quotation">
-          </div>
-          <div class="hidden sm:block absolute bottom-12 right-12 md:bottom-24  lg:bottom-20 lg:right-20 rotate-180">
-            <img class="md:h-8 lg:h-full"  src="images/quote.svg" alt="open quotation">
-          </div>
-          <h2 class="primary--title mt-0 mb-3">We love our customers!</h2>
-          <p class="-mt-[18px] mb-[20px] opacity-50 text-sm">And they love us back <img class="inline-block w-3.5 mb-0.5" src="images/heart-icon.svg" alt="heart icon"> </p>
-          <div id="testimonial-slideshow" class="overflow-hidden relative z-50">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <p class="sm:px-12 leading-7 montserrat-light">The host was very accomodating and wanted to make sure I didn't need anything and that I had a good stay. The flat was very clean and had everything for a good stay, kitchen, pool, good wifi etc... Great quality for the price! By the beach and the yumbo center</p>
-                <p class="mt-3 text-elefantes-orange ">Laurent</p>
-                <img class="mx-auto" src="images/spain-flag.png" alt="Spain flag">
-              </div>
-              <div class="swiper-slide">
-                <p class="sm:px-12 leading-7 montserrat-light">The host was very accomodating and wanted to make sure I didn't need anything and that I had a good stay. The flat was very clean and had everything for a good stay, kitchen, pool, good wifi etc... Great quality for the price! By the beach and the yumbo center</p>
-                <p class="mt-3 text-elefantes-orange ">Julio Cesar</p>
-                <img class="mx-auto" src="images/spain-flag.png" alt="Spain flag">
-              </div>
-              <div class="swiper-slide">
-                <p class="sm:px-12 leading-7 montserrat-light">The host was very accomodating and wanted to make sure I didn't need anything and that I had a good stay. The flat was very clean and had everything for a good stay, kitchen, pool, good wifi etc... Great quality for the price! By the beach and the yumbo center</p>
-                <p class="mt-3 text-elefantes-orange ">Julio Cesar</p>
-                <img class="mx-auto" src="images/spain-flag.png" alt="Spain flag">
-              </div>
-              <div class="swiper-slide">
-                <p class="sm:px-12 leading-7 montserrat-light">The host was very accomodating and wanted to make sure I didn't need anything and that I had a good stay. The flat was very clean and had everything for a good stay, kitchen, pool, good wifi etc... Great quality for the price! By the beach and the yumbo center</p>
-                <p class="mt-3 text-elefantes-orange ">Julio Cesar</p>
-                <img class="mx-auto" src="images/spain-flag.png" alt="Spain flag">
-              </div>
+            </div>
+            <div class="swiper-slide rounded-lg">
+                <picture>
+                  <source srcset="/images/apartment/slider01.webp" type="image/webp">
+                <img src="/images/apartment/slider01.webp" alt="Apartment Image 2">
+              </picture>
+            </div>
+            <div class="swiper-slide rounded-lg">
+                <picture>
+                  <source srcset="/images/apartment/slider01.webp" type="image/webp">
+                <img src="/images/apartment/slider01.webp" alt="Apartment Image 2">
+              </picture>
             </div>
           </div>
-          <div class="swiper-pagination2 absolute !bottom-5"></div>
-				</div>	
+          
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+        
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        
+          <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar"></div>
+        </div>
+      </div>
+    </section>
+    <!-- Amenities & Testimonies -->
+    <section class="pb-28 px-5 relative overflow-hidden">
+      <div class="container mx-auto mt-16 lg:mt-28 relative">
+        <div class="hidden md:block absolute w-full top-[40px] md:top-[40px] 2xl:top-[50px] max-w-[960px] arrow-background">
+          <img src="/images/arrow-ladder.svg" alt="">
+        </div>
+        <div class="flex flex-wrap max-w-4xl mx-auto text-center">
+          <div class="basis-full md:px-9 md:basis-1/3">
+            <h2 class="primary--title my-0 md:mt-6 lg:mt-2 md:text-4xl lg:text-5xl">Everything you need for a perfect vacation</h2>
+          </div>
+          <div class="md:px-9 lg:p-0 basis-1/2 md:basis-1/3 md:text-base lg:text-xl md:leading-8 lg:leading-9">
+            <ul class="md:mt-12 lg:mt-16  ">
+              <li>Fully Equiped kitchen</li>
+              <li>Soap & Shampoo</li>
+              <li>Coffee & Tea</li>
+              <li>Board Games</li>
+            </ul>
+          </div>
+          <div class="md:px-9 lg:p-0 basis-1/2 md:basis-1/3 md:text-base lg:text-xl md:leading-8 lg:leading-9">
+            <ul class="md:mt-24 lg:mt-32 ">
+              <li>Fully Equiped kitchen</li>
+              <li>Soap & Shampoo</li>
+              <li>Coffee & Tea</li>
+              <li>Board Games</li>
+            </ul>
+          </div>
+        </div>
+        <div class="mt-16 md:mt-[75px] lg:mt-28">
+          <div class=" bg-elefantes-green rounded-xl lg:max-w-[856px] lg:mr-[130px] xl:max-w-[844px] xl:mr-[277px] mx-auto md:mr-[70px] md:mt-[80px] text-white text-center py-12 px-8 2xl:ml-[268px] relative">
+            <div class=" hidden sm:block absolute top-12 left-12 md:top-24 lg:top-20 lg:left-20 ">
+              <img class="md:h-8 lg:h-full"  src="images/quote.svg" alt="open quotation">
+            </div>
+            <div class="hidden sm:block absolute bottom-12 right-12 md:bottom-24  lg:bottom-20 lg:right-20 rotate-180">
+              <img class="md:h-8 lg:h-full"  src="images/quote.svg" alt="open quotation">
+            </div>
+            <h2 class="primary--title mt-0 mb-3">We love our customers!</h2>
+            <p class="-mt-[18px] mb-[20px] opacity-50 text-sm">And they love us back <img class="inline-block w-3.5 mb-0.5" src="images/heart-icon.svg" alt="heart icon"> </p>
+            <div id="testimonial-slideshow" class="overflow-hidden relative z-50">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <p class="sm:px-12 leading-7 montserrat-light">The host was very accomodating and wanted to make sure I didn't need anything and that I had a good stay. The flat was very clean and had everything for a good stay, kitchen, pool, good wifi etc... Great quality for the price! By the beach and the yumbo center</p>
+                  <p class="mt-3 text-elefantes-orange ">Laurent</p>
+                  <img class="mx-auto" src="images/spain-flag.png" alt="Spain flag">
+                </div>
+                <div class="swiper-slide">
+                  <p class="sm:px-12 leading-7 montserrat-light">The host was very accomodating and wanted to make sure I didn't need anything and that I had a good stay. The flat was very clean and had everything for a good stay, kitchen, pool, good wifi etc... Great quality for the price! By the beach and the yumbo center</p>
+                  <p class="mt-3 text-elefantes-orange ">Julio Cesar</p>
+                  <img class="mx-auto" src="images/spain-flag.png" alt="Spain flag">
+                </div>
+                <div class="swiper-slide">
+                  <p class="sm:px-12 leading-7 montserrat-light">The host was very accomodating and wanted to make sure I didn't need anything and that I had a good stay. The flat was very clean and had everything for a good stay, kitchen, pool, good wifi etc... Great quality for the price! By the beach and the yumbo center</p>
+                  <p class="mt-3 text-elefantes-orange ">Julio Cesar</p>
+                  <img class="mx-auto" src="images/spain-flag.png" alt="Spain flag">
+                </div>
+                <div class="swiper-slide">
+                  <p class="sm:px-12 leading-7 montserrat-light">The host was very accomodating and wanted to make sure I didn't need anything and that I had a good stay. The flat was very clean and had everything for a good stay, kitchen, pool, good wifi etc... Great quality for the price! By the beach and the yumbo center</p>
+                  <p class="mt-3 text-elefantes-orange ">Julio Cesar</p>
+                  <img class="mx-auto" src="images/spain-flag.png" alt="Spain flag">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination2 absolute !bottom-5"></div>
+          </div>	
 
-			</div>
-		</div>
-	</section>
+        </div>
+      </div>
+    </section>
     <!-- Workation -->
     <section class="bg-workation bg-cover pb-6 pt-20 relative bg-fixed">
       <div class="absolute inset-0 bg-black opacity-40 w-full h-full z-0"></div>
@@ -232,22 +232,25 @@
       </div>
     </section>
     <!-- Personal Welcome -->
-    <section class="container mx-auto">
-      <h2 class="text-center font-katibeh text-elefantes-orange text-6xl mt-20 mb-14">Vacationing with Heart: <br> Where eveery guest matters</h2>
-      <div class="grid grid-cols-2 gap-4 mt-4">
+    <section class="container mx-auto px-5 pb-20">
+      <h2 class="primary--title">Vacationing with Heart: <br> Where eveery guest matters</h2>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-4">
         <div>
           <p class="leading-8">Hola, dear travelers 👋</p>
           <p class="leading-8">I'm Alfredo, your host and the proud owner of this little slice of paradise nestled in the heart of Gran Canaria. As you consider your stay on this beautiful island, I invite you to experience hospitality with heart at Los Elefantes.</p>
           <p class="leading-8 mt-8">Here, we believe in more than just offering accommodation; we believe in welcoming each guest as a member of our extended family. From the moment you step foot into our cozy retreat, you're not just another visitor – you're a cherished guest, and we're here to ensure your stay is nothing short of extraordinary.</p>
-          <p class="leading-8 mt-8">At Los Elefantes Beach House, we're passionate about sharing the authentic spirit of this island with you. Whether you're seeking relaxation under the swaying palm trees, thrilling adventures exploring our vibrant surroundings, or simply craving a taste of local culture and cuisine, we're here to make it happen.</p>
         </div>
-        <div>
-          <img src="/images/me-welcome.png" alt="Gran Canaria Island">
+        <div class="flex justify-center items-right">
+          <div class="flex align-items-center justify-center">
+            <div class="px-5 pt-5 pb-5 bg-white h-fit">
+              <img class="object-contain" src="/images/me-welcome.png" alt="Gran Canaria Island">
+              <p class="text-center text-sm mt-5 gloria-hallelujah-regular">This is me on a hike in Agaete</p>
+          </div>
         </div>
       </div>
     </section>
     <!-- Newsletter-->
-    <section class="bg-elefantes-green py-8">
+    <section class="bg-elefantes-green py-8 ">
       <div class="container mx-auto ">
         <div class="grid grid-cols-2 gap-4">
           <div>
@@ -259,7 +262,7 @@
           </div>
           <div>
             <p class="text-white text-center">
-              Trust me! It’s definetely worth it. No spam. Just great deals and susbtantials disccounts 🤑
+              Trust me! It's definetely worth it. No spam. Just great deals and susbtantials disccounts 🤑
             </p>
           </div>
         </div>
